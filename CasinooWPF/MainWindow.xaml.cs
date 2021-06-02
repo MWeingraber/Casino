@@ -47,9 +47,9 @@ namespace CasinooWPF
                 b = Convert.ToInt32(1 + rnd.NextDouble() * 3);
 
                 c = Convert.ToInt32(1 + rnd.NextDouble() * 3);
-                Uri Watermelon = new Uri("C:/Users/morit/Desktop/Schule/SEW/Casino/CasinoWPF/CasinooWPF/images/rsz_watermelon.png");
-                Uri Grapes = new Uri("C:/Users/morit/Desktop/Schule/SEW/Casino/CasinoWPF/CasinooWPF/images/rsz_grapes.png");
-                Uri Sedmica = new Uri("C:/Users/morit/Desktop/Schule/SEW/Casino/CasinoWPF/CasinooWPF/images/rsz_sedmica.bmp");
+                Uri Watermelon = new Uri("C:/Users/morit/Desktop/Schule/SEW/CasinoWPF/CasinooWPF/images/rsz_watermelon.png");
+                Uri Grapes = new Uri("C:/Users/morit/Desktop/Schule/SEW/CasinoWPF/CasinooWPF/images/rsz_grapes.png");
+                Uri Sedmica = new Uri("C:/Users/morit/Desktop/Schule/SEW/CasinoWPF/CasinooWPF/images/rsz_sedmica.bmp");
 
                 switch (a)
                 {
