@@ -7,20 +7,23 @@
 	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 	Title="Slot Machine">
     <Grid Height="694" Width="1269">
-        <Button Name="button8" Height="76" Width="133" TabIndex="20" IsEnabled="false" Click="button8_Click" Margin="781,349,355,269" HorizontalAlignment="Right" VerticalAlignment="Bottom" >WITHDRAWN MONEY</Button>
-        <Button Name="button9" Height="28" Width="100" TabIndex="19" IsEnabled="false" Click="button9_Click" Margin="333,410,836,256" HorizontalAlignment="Right" VerticalAlignment="Bottom" >PAY TABLE</Button>
-        <Button Name="button7" Height="34" Width="36" TabIndex="17" IsEnabled="false" Click="button7_Click" Margin="889,495,344,165" HorizontalAlignment="Right" VerticalAlignment="Bottom" >-</Button>
-        <Button Name="button6" Height="32" Width="36" TabIndex="16" IsEnabled="false" Click="button6_Click" Margin="889,447,344,215" HorizontalAlignment="Right" VerticalAlignment="Bottom" >+</Button>
-        <Button Name="button5" Height="82" Width="100" TabIndex="15" IsEnabled="false" Click="button5_Click" Margin="781,447,388,165" HorizontalAlignment="Right" VerticalAlignment="Bottom" >BET</Button>
-        <Label Name="betlbl" Height="46" Width="352" FontSize="11" FontFamily="Microsoft Sans Serif" TabIndex="14" Margin="581,33,336,615" HorizontalAlignment="Right" VerticalAlignment="Bottom" >BET:</Label>
-        <Button Name="button4" Height="34" Width="36" TabIndex="13" IsEnabled="false" Click="button4_Click" Margin="441,495,792,165" HorizontalAlignment="Right" VerticalAlignment="Bottom" >-</Button>
-        <Button Name="button3" Height="32" Width="36" TabIndex="12" IsEnabled="false" Click="button3_Click" Margin="441,445,792,217" HorizontalAlignment="Right" VerticalAlignment="Bottom" >+</Button>
-        <Button Name="button2" Height="82" Width="100" TabIndex="11" Click="button2_Click" Margin="333,445,836,167" HorizontalAlignment="Right" VerticalAlignment="Bottom" >INPUT MONEY</Button>
-        <Label Name="infolbl" Height="46" Width="236" FontSize="11" FontFamily="Microsoft Sans Serif" TabIndex="9" Margin="355,33,678,615" HorizontalAlignment="Right" VerticalAlignment="Bottom" >CREDIT:</Label>
-        <Label Name="lblMsg" Height="58" Width="249" FontSize="11" FontFamily="Microsoft Sans Serif" TabIndex="8" Margin="517,362,503,274" HorizontalAlignment="Right" VerticalAlignment="Bottom" ></Label>
-        <Button Name="Button1" Height="84" Width="240" TabIndex="7" IsEnabled="false" Click="Button1_Click" Margin="507,445,522,165" HorizontalAlignment="Right" VerticalAlignment="Bottom" >SPIN</Button>
-        <Image x:Name="PictureBox1" HorizontalAlignment="Left" Height="100" Margin="333,153,0,0" VerticalAlignment="Top" Width="100" />
-        <Image x:Name="PictureBox2" HorizontalAlignment="Left" Height="100" Margin="581,153,0,0" VerticalAlignment="Top" Width="100"/>
-        <Image x:Name="PictureBox3" HorizontalAlignment="Left" Height="100" Margin="889,153,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button Name="button8" Height="76" Width="133" TabIndex="20" IsEnabled="false" Click="button8_Click" Margin="0,0,634,256" HorizontalAlignment="Right" VerticalAlignment="Bottom" >WITHDRAWN MONEY</Button>
+        <Button Name="button9" Height="28" Width="100" TabIndex="19" IsEnabled="false" Click="button9_Click" Margin="0,0,1115,243" HorizontalAlignment="Right" VerticalAlignment="Bottom" >PAY TABLE</Button>
+        <Button Name="button7" Height="34" Width="36" TabIndex="17" IsEnabled="false" Click="button7_Click" Margin="0,0,623,152" HorizontalAlignment="Right" VerticalAlignment="Bottom" >-</Button>
+        <Button Name="button6" Height="32" Width="36" TabIndex="16" IsEnabled="false" Click="button6_Click" Margin="0,0,623,202" HorizontalAlignment="Right" VerticalAlignment="Bottom" >+</Button>
+        <Button Name="button5" Height="82" Width="100" TabIndex="15" IsEnabled="false" Click="button5_Click" Margin="0,0,667,152" HorizontalAlignment="Right" VerticalAlignment="Bottom" >BET</Button>
+        <Label Name="betlbl" Height="46" Width="352" FontSize="11" FontFamily="Microsoft Sans Serif" TabIndex="14" Margin="0,0,615,602" HorizontalAlignment="Right" VerticalAlignment="Bottom" >BET:</Label>
+        <Button Name="button4" Height="34" Width="36" TabIndex="13" IsEnabled="false" Click="button4_Click" Margin="0,0,1071,152" HorizontalAlignment="Right" VerticalAlignment="Bottom" >-</Button>
+        <Button Name="button3" Height="32" Width="36" TabIndex="12" IsEnabled="false" Click="button3_Click" Margin="0,0,1071,204" HorizontalAlignment="Right" VerticalAlignment="Bottom" >+</Button>
+        <Button Name="button2" Height="82" Width="100" TabIndex="11" Click="button2_Click" Margin="0,0,1115,154" HorizontalAlignment="Right" VerticalAlignment="Bottom" >INPUT MONEY</Button>
+        <Label Name="infolbl" Height="46" Width="236" FontSize="11" FontFamily="Microsoft Sans Serif" TabIndex="9" Margin="0,0,957,602" HorizontalAlignment="Right" VerticalAlignment="Bottom" >CREDIT:</Label>
+        <Label Name="lblMsg" Height="58" Width="249" FontSize="11" FontFamily="Microsoft Sans Serif" TabIndex="8" Margin="0,0,782,261" HorizontalAlignment="Right" VerticalAlignment="Bottom" ></Label>
+        <Button Name="Button1" Height="84" Width="240" TabIndex="7" IsEnabled="false" Click="Button1_Click" Margin="0,0,801,150" HorizontalAlignment="Right" VerticalAlignment="Bottom" >SPIN</Button>
+        <Image x:Name="PictureBox1" HorizontalAlignment="Left" Height="100" Margin="131,166,0,0" VerticalAlignment="Top" Width="100" />
+        <Image x:Name="PictureBox2" HorizontalAlignment="Left" Height="100" Margin="302,166,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image x:Name="PictureBox3" HorizontalAlignment="Left" Height="100" Margin="468,166,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button x:Name="Button10" Content="Simulate" HorizontalAlignment="Left" Margin="328,347,0,0" VerticalAlignment="Top" IsEnabled="False" Click="Button10_Click"/>
+        <ListBox x:Name="listBx" Margin="659,10,106,10"/>
+
     </Grid>
 </Window>
