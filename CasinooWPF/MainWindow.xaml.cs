@@ -68,9 +68,9 @@ namespace CasinooWPF
                 //Uri Watermelon = new Uri(@"..\..\..\images\rsz_watermelon.png", UriKind.Relative);
                 //Uri Grapes = new Uri(@"..\..\..\images\rsz_grapes.png", UriKind.Relative);
                 //Uri Sedmica = new Uri(@"..\..\..\images\rsz_sedmica.bmp", UriKind.Relative);
-                Uri Watermelon = new Uri(@"C:\Users\morit\Desktop\Schule\SEW\Casino\CasinoWPF\CasinooWPF\images\rsz_watermelon.png");
-                Uri Grapes = new Uri(@"C:\Users\morit\Desktop\Schule\SEW\Casino\CasinoWPF\CasinooWPF\images\rsz_grapes.png");
-                Uri Sedmica = new Uri(@"C:\Users\morit\Desktop\Schule\SEW\Casino\CasinoWPF\CasinooWPF\images\rsz_sedmica.bmp");
+                Uri Watermelon = new Uri(@"C:\Users\morit\Desktop\Schule\SEW\CasinoWPF\CasinooWPF\images\rsz_watermelon.png");
+                Uri Grapes = new Uri(@"C:\Users\morit\Desktop\Schule\SEW\CasinoWPF\CasinooWPF\images\rsz_grapes.png");
+                Uri Sedmica = new Uri(@"C:\Users\morit\Desktop\Schule\SEW\CasinoWPF\CasinooWPF\images\rsz_sedmica.bmp");
 
                 switch (a)
                 {
@@ -125,7 +125,7 @@ namespace CasinooWPF
                 else if (button==2&& coutIntern == 100)
                 {
                     timer1.IsEnabled = false;
-                    MessageBox.Show(Convert.ToString(data.counter));
+                    //MessageBox.Show(Convert.ToString(data.counter));
                     coutIntern = 0;
                 }
                 m = 0;
@@ -173,8 +173,7 @@ namespace CasinooWPF
                     credit = data.credit
                 };
                 result.Add(indiv);
-                string json = JsonConvert.SerializeObject(result, Formatting.Indented);
-                System.IO.File.AppendAllText(@"../../../TxtFile/Data.json", json);
+                
                 button8.IsEnabled = true;
                 button5.IsEnabled = true;
 
@@ -300,10 +299,30 @@ namespace CasinooWPF
             button = 2;
             timer1.Interval = TimeSpan.FromMilliseconds(0);
             timer1.Start();
+            
+        }
+
+        private void btnSave_Click(object sender, RoutedEventArgs e)
+        {
+            string json = JsonConvert.SerializeObject(result, Formatting.Indented);
+            System.IO.File.WriteAllText(@"../../../TxtFile/Data.json", json);
+        }
+
+        List<Data> l = new List<Data>();
+        private void btnLoad_Click(object sender, RoutedEventArgs e)
+        {
+            string json = File.ReadAllText(@"../../../TxtFile/Data.json");
+            l = JsonConvert.DeserializeObject<List<Data>>(json);
+            listBx.ItemsSource = l;
             //using (StreamReader r = new StreamReader(@"../../../TxtFile/Data.json"))
             //{
             //   string json = r.ReadToEnd();
             //    result = JsonConvert.DeserializeObject<List<Data>>(json);
+            //}
+            //List<Data> result = JsonConvert.DeserializeObject<List<Data>>(json);
+            //for ()
+            //{
+                
             //}
             //listBx.Items.Add(result);
         }

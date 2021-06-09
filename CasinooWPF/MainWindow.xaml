@@ -23,7 +23,9 @@
         <Image x:Name="PictureBox2" HorizontalAlignment="Left" Height="100" Margin="302,166,0,0" VerticalAlignment="Top" Width="100"/>
         <Image x:Name="PictureBox3" HorizontalAlignment="Left" Height="100" Margin="468,166,0,0" VerticalAlignment="Top" Width="100"/>
         <Button x:Name="Button10" Content="Simulate" HorizontalAlignment="Left" Margin="328,347,0,0" VerticalAlignment="Top" IsEnabled="False" Click="Button10_Click"/>
-        <ListBox x:Name="listBx" Margin="659,10,106,10"/>
+        <DataGrid x:Name="listBx" HorizontalAlignment="Right" VerticalAlignment="Stretch" Width="500"/>
+        <Button x:Name="btnSave" Content="Save" HorizontalAlignment="Left" Margin="588,92,0,0" VerticalAlignment="Top" Click="btnSave_Click"/>
+        <Button x:Name="btnLoad" Content="Load" HorizontalAlignment="Left" Margin="582,117,0,0" VerticalAlignment="Top" Click="btnLoad_Click"/>
 
     </Grid>
 </Window>
